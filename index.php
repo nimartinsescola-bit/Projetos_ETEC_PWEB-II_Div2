@@ -1,3 +1,11 @@
+<?php
+//declaração de atributos (mesma coisa que variáveis)
+$imagem = 'midias/61AEZm4kVeL._AC_SX679_.jpg';
+$titulo = 'notebook rosa';
+$resumo = 'notebook lindinho rosinha';
+$valor = 3399.99;
+$quantidade = 5;
+?>
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -6,7 +14,7 @@
     <title>O Lojinha</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
   </head>
   <body>
@@ -136,8 +144,20 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div class="row">
+       <div class="col mt-2">
+        <div class="card" style="width: 18rem;">
+  <img src="<?php echo $imagem; ?> " class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $titulo; ?></h5>
+    <p class="card-text"><?php echo $resumo; ?></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+        </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
