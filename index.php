@@ -5,6 +5,7 @@ $titulo = 'notebook rosa';
 $resumo = 'notebook lindinho rosinha';
 $valor = 3399.99;
 $quantidade = 5;
+$i = 1;
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -145,16 +146,22 @@ $quantidade = 5;
         </button>
       </div>
       <div class="row">
+        <?php while($i<=10){ ?>
        <div class="col mt-2">
         <div class="card" style="width: 18rem;">
   <img src="<?php echo $imagem; ?> " class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo $titulo; ?></h5>
     <p class="card-text"><?php echo $resumo; ?></p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="text-danger">Valor: <b> R$<?php echo $valor; ?></b></p>
+    <p class=text-primary>
+      Estoque: <?php echo $quantidade; ?>
+    </p>
+    <a href="#" class="btn btn-primary">Ver produto</a>
   </div>
 </div>
         </div>
+        <?php $i++; }//$i=i$+1 ?>
       </div>
     </main>
 
