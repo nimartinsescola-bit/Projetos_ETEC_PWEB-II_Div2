@@ -10,7 +10,8 @@ $i = 1;
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O Lojinha</title>
     <link
@@ -20,40 +21,7 @@ $i = 1;
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">LogoDaLojinha</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Inicial</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categorias.html">Categorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="subcategorias.html">Subcategorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <?php require ('menu.php'); //unit uses unit ?>
     </header>
     <main class="container">
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -165,6 +133,6 @@ $i = 1;
       </div>
     </main>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
