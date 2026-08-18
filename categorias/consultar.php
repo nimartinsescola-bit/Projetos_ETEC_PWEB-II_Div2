@@ -17,13 +17,13 @@ $prp->execute();
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <div class="text-end">
-            <a class="btn btn-success mt-3" href="inserir.php">📄 Novo</a>
+            <a href="insere.php" class="btn btn-outline-success">📄 Novo</a>
         </div>
         <div class="input-group mt-3">
-            <input type="text" name="edtfiltro" id="edtfiltro" class="form-control" placeholder="DIGITE A CATEGORIA PARA FILTRAR">
-            <button type="button" onclick="" name="btnfiltrar" id="btnfiltrar" class="btn btn-info">🔎 Filtrar</button>
+            <input type="text" name="edtbusca" id="edtbusca" class="form-control" placeholder="DIGITE O NOME DA CATEGORIA PARA FILTRAR">
+            <button type="button" class="btn btn-outline-info">🔎 Filtrar</button>
         </div>
         <table class="table table-striped">
             <thead>
